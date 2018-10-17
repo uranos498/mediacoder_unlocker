@@ -4,6 +4,9 @@
 use strict;
 
 use Win32::GuiTest qw(:ALL);
+use Win32::GuiTest qw(GetCursorPos);
+# my @coordo = GetCursorPos();
+
 my $mediacoderWindowsDonationId;
 
 # wait for donation box
@@ -27,7 +30,8 @@ if ($math_result eq '') {
   print "Result is $math_result\n";
 }
 
-
+#cursor position
+my @coordo = GetCursorPos();
 my @coords = GetWindowRect($mediacoderWindowsDonationId);
 
 # set focus on window
@@ -43,6 +47,8 @@ MouseMoveAbsPix($coords[0] + 348, $coords[1] + 280);
 # click
 SendLButtonDown(); SendLButtonUp();
 
+#return cursor to initial position
+MouseMoveAbsPix(@coordo);
 # loop
 sleep(10);
 goto START;
