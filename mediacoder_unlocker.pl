@@ -1,4 +1,5 @@
 #!perl -w
+# Updated by Uranos498 to comply with new question in Donation Box
 
 use strict;
 
