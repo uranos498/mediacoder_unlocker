@@ -1,5 +1,9 @@
 #!perl -w
 # Updated by Uranos498 to comply with new question in Donation Box
+#my $var = "Hello World";
+#for(my $i=0; $i<length($var); $i++){
+#        print "".substr($var, $i, 1)."\n";
+#}
 
 use strict;
 
