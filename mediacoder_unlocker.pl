@@ -4,6 +4,7 @@
 #for(my $i=0; $i<length($var); $i++){
 #        print "".substr($var, $i, 1)."\n";
 #}
+#http://olivier.kraif.u-grenoble3.fr/files/Tutoriel.Regex.html
 
 use strict;
 
